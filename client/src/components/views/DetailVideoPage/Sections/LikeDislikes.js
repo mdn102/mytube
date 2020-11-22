@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { Tooltip, Icon } from 'antd';
+import { Tooltip } from 'antd';
+import Icon from '@ant-design/icons';
 import Axios from 'axios';
 
 function LikeDislikes(props) {
@@ -30,7 +31,7 @@ function LikeDislikes(props) {
                     setLikes(response.data.likes.length)
 
                     //if I already click this like button or not 
-                    response.data.likes.map(like => {
+                    response.data.likes.forEach(like => {
                         if (like.userId === props.userId) {
                             setLikeAction('liked')
                         }
@@ -48,7 +49,7 @@ function LikeDislikes(props) {
                     setDislikes(response.data.dislikes.length)
 
                     //if I already click this like button or not 
-                    response.data.dislikes.map(dislike => {
+                    response.data.dislikes.forEach(dislike => {
                         if (dislike.userId === props.userId) {
                             setDislikeAction('disliked')
                         }
@@ -57,7 +58,7 @@ function LikeDislikes(props) {
                     alert('Failed to get dislikes')
                 }
             })
-
+        // eslint-disable-next-line
     }, [])
 
 

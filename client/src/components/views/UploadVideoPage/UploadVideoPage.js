@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Typography, Button, Form, message, Input, Icon } from 'antd';
+import { Typography, Button, Form, message, Input } from 'antd';
+import Icon from '@ant-design/icons';
 import Dropzone from 'react-dropzone';
 import axios from 'axios';
 import { useSelector } from "react-redux";

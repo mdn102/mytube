@@ -63,7 +63,7 @@ function Subscriber(props) {
                     alert('Failed to get Subscribed Information')
                 }
             })
-
+        // eslint-disable-next-line
     }, [])
 
 
