@@ -7,7 +7,7 @@
     "axios": "^0.18.0",
     "formik": "^2.2.5",
     "moment": "^2.24.0",
-    "react": "^16.8.6",
+    "react": "^17.0.1",
     "react-dom": "^16.8.6",
     "react-dropzone": "^10.2.1",
     "react-icons": "^3.7.0",
@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@ant-design/icons": "^4.3.0",
     "http-proxy-middleware": "^0.19.1"
   }
 }
